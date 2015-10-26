@@ -1,0 +1,17 @@
+/* b)
+Do you see anything wrong with the following code? How would you fix it?
+String buggyMethod(int n) {
+if (n == 0) {
+return "";
+}
+return n + " " + buggyMethod(n - 2);
+}
+*/
+buggyMethod(3);
+
+String buggyMethod(int n) {
+if (n == 0) {
+		return;
+			}
+System.out.println(n + " " + buggyMethod(n - 2));
+}
